@@ -1,0 +1,5 @@
+
+.DS_Store
+*.pyc
+hemnet_scraper/venv/*
+hemnet_scraper/.idea/*
