@@ -56,7 +56,7 @@ class ReadSoup:
 def scrape(price, size):
     clean_apartments = []
     missed_clean_up = []
-    for i in range(1, 51):
+    for i in range(0, 51):
         r = requests.get(
             final_price_url + "&selling_price_min=" + price[0] + "&selling_price_max=" + price[
                 1] + "living_area_min=" + size[0] + "&living_area_max=" + size[1] + "&page=" + str(
