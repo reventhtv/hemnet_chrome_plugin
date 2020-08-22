@@ -1,32 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d04ce146-2cce-4031-b158-f157252a3808" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="d04ce146-2cce-4031-b158-f157252a3808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/poc.model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/.ipynb_checkpoints/model_poc-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/model_poc.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/poc.model" beforeDir="false" afterPath="$PROJECT_DIR$/hemnet_scraper/poc.model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_10000000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_10000000100.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_1000000030.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_1000000050.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_1000000070.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_2500000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_2500000100.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_250000030.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_250000050.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_250000070.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_5000000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_5000000100.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_500000030.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_500000050.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_500000070.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/hemnet_scraper/test_data_full.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="8cd9e042-592d-4d89-b6fe-fc10934b81aa" />
   <component name="ProjectId" id="1frMA2uVHyX7CXQPr134yqiuFW3" />
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api" />
+    <property name="settings.editor.selected.configurable" value="RainbowCSV.Settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -41,6 +81,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hemnet_scraper/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -56,6 +97,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -66,8 +108,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596971610773</updated>
+      <workItem from="1596976812065" duration="747000" />
+      <workItem from="1597474652849" duration="2464000" />
+      <workItem from="1597773661686" duration="1020000" />
+      <workItem from="1598076296456" duration="861000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -79,5 +128,35 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom" timestamp="1597649393608">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom/0.0.1680.1050/-522.-1440.2560.1440@0.0.1680.1050" timestamp="1597649393608" />
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1597481043483" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center" timestamp="1597649393606">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.center/0.0.1680.1050/-522.-1440.2560.1440@0.0.1680.1050" timestamp="1597649393606" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1597481043482" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left" timestamp="1597649393605">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.left/0.0.1680.1050/-522.-1440.2560.1440@0.0.1680.1050" timestamp="1597649393605" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1597481043482" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right" timestamp="1597649393607">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1878" height="304" key="GridCell.Tab.0.right/0.0.1680.1050/-522.-1440.2560.1440@0.0.1680.1050" timestamp="1597649393607" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1597481043483" />
+    <state x="469" y="179" key="SettingsEditor" timestamp="1597480758181">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1597480758181" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/hemnet_chrome_plugin$main.coverage" NAME="main Coverage Results" MODIFIED="1597480567704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hemnet_scraper" />
   </component>
 </project>
