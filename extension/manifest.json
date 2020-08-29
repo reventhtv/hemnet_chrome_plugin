@@ -1,7 +1,7 @@
 {
-  "name": "Getting Started Example",
+  "name": "Hemgiss",
   "version": "1.0",
-  "description": "Build an Extension!",
+  "description": "Hemnet estimator",
   "permissions": ["activeTab", "declarativeContent", "storage"],
   "options_page": "options.html",
   "background": {
