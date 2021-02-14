@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Home price predictor",
+    "description": "Build an Extension!",
+    "version": "0.1",
+    "content_scripts": [
+        {
+          "matches": [
+            "https://www.hemnet.se/bostader/*"
+          ],
+          "js": ["http://code.jquery.com/jquery-3.5.1.slim.min.js","content.js"]
+        }
+    ]
+}

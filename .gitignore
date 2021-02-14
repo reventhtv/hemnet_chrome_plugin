@@ -3,3 +3,6 @@
 *.pyc
 hemnet_scraper/venv/*
 hemnet_scraper/.idea/*
+java_loader/*
+.vscode/*
+.idea/*

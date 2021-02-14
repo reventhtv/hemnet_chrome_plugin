@@ -2,30 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d04ce146-2cce-4031-b158-f157252a3808" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/poc.model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hemnet_scraper/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hemnet_chrome_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hemnet_chrome_plugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/.ipynb_checkpoints/model_poc-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/model_poc.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/poc.model" beforeDir="false" afterPath="$PROJECT_DIR$/hemnet_scraper/poc.model" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_10000000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_10000000100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_1000000030.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_1000000050.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_1000000070.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_2500000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_2500000100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_250000030.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_250000050.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_250000070.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_5000000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_5000000100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_500000030.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_500000050.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_500000070.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hemnet_scraper/test_data_full.csv" beforeDir="false" afterPath="$PROJECT_DIR$/hemnet_scraper/test_data_full.csv" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,15 +44,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api" />
-    <property name="settings.editor.selected.configurable" value="RainbowCSV.Settings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/api" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hemnet_chrome_plugin" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,13 +87,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="hemnet_chrome_plugin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.train" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -111,24 +129,29 @@
       <workItem from="1596976812065" duration="747000" />
       <workItem from="1597474652849" duration="2464000" />
       <workItem from="1597773661686" duration="1020000" />
-      <workItem from="1598076296456" duration="861000" />
+      <workItem from="1598076296456" duration="1008000" />
+      <workItem from="1598597837627" duration="300000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1878" height="304" key="GridCell.Tab.0.bottom" timestamp="1597649393608">
