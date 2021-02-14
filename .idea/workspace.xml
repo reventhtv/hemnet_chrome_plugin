@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d04ce146-2cce-4031-b158-f157252a3808" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hemnet_scraper/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hemnet_chrome_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hemnet_chrome_plugin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.train">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hemnet_chrome_plugin" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.train" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
