@@ -13,4 +13,3 @@
 * Serving: Move Kfserving code here
 * Serving: Load encoder from json
 * Serving: Call kfserving ingress
- 
