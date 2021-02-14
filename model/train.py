@@ -50,7 +50,7 @@ if __name__ == '__main__':
     # Save model and encoder
     np.save('regions.npy', enc.encoder_dict_)
 
-    with open('regions.json', 'w') as fp:
-        json.dump(enc.encoder_dict_, fp)
+    with open('regions.json', 'w', encoding='utf8') as fp:
+        json.dump(enc.encoder_dict_, fp, ensure_ascii=False)
 
     regressor.save_model('hemnet-pred.model')
