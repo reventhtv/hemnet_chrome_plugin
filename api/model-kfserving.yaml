@@ -1,0 +1,9 @@
+apiVersion: "serving.kubeflow.org/v1alpha2"
+kind: "InferenceService"
+metadata:
+  name: "xgboost-iris"
+spec:
+  default:
+    predictor:
+      xgboost:
+        storageUri: "s3://hemnet-predictor/hemnet-pred.model"
