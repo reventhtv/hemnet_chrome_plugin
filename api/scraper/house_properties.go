@@ -19,10 +19,6 @@ func Scrape(url string) Properties {
 	// Instantiate default collector
 	scraper := colly.NewCollector(
 		colly.AllowedDomains("hemnet.se", "www.hemnet.se"),
-		
-		// Cache responses to prevent multiple download of pages
-		// even if the collector is restarted
-		colly.CacheDir("./hemnet_cache"),
 	)
 	var properties Properties
 	scraper.OnHTML("div[class=property-address]", func(e *colly.HTMLElement) {
