@@ -31,23 +31,31 @@ func Scrape(url string) Properties {
 		finalValue := strings.Split(fullKommun, ",")[0]
 		properties.Kommun = finalValue
 	})
+	
+	scraper.OnHTML(".qa-living-area-attribute", func(element *colly.HTMLElement) {
+		label := element.ChildText(".property-attributes-table__label")
+		value := element.ChildText(".property-attributes-table__value")
+		if label == "Boarea" {
+			properties.Size = strings.Replace(value, " m²", "", 1)
+		}
+	})
+	
 	scraper.OnHTML("div[class=property-attributes-table]", func(e *colly.HTMLElement) {
 		e.ForEach("dl[class=property-attributes-table__area]", func(_ int, element *colly.HTMLElement) {
 			e.ForEach("div[class=property-attributes-table__row]", func(_ int, internal *colly.HTMLElement) {
-				
-				lable := internal.ChildText(".property-attributes-table__label")
+				label := internal.ChildText(".property-attributes-table__label")
 				value := internal.ChildText(".property-attributes-table__value")
 				
-				switch lable {
+				switch label {
 				case "Antal rum":
 					properties.Rooms = strings.Replace(value, " rum", "", 1)
-				case "Boarea":
-					properties.Size = strings.Replace(value, " m²", "", 1)
 				case "Byggår":
 					properties.YearBuilt = value
 				case "Avgift":
-					clearedUnits := strings.Replace(value, " kr/mån", "", 1)
-					finalValue := strings.Replace(clearedUnits, " ", "", 1)
+					clearKr := strings.Replace(value, "kr", "", 1)
+					clearKr = strings.Replace(clearKr, "mån", "", 1)
+					clearKr = strings.Replace(clearKr, "/", "", 1)
+					finalValue := strings.Replace(clearKr, " ", "", 2)
 					properties.MonthlyRent = finalValue
 				}
 				
