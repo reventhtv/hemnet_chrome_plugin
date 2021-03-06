@@ -33,8 +33,8 @@ func scrape(store *Storage) {
 	// Limit the number of threads started by colly to two
 	// when visiting links which domains' matches "*httpbin.*" glob
 	_ = collector.Limit(&colly.LimitRule{
-		DomainGlob:  "*hemnet.se*",
-		Delay:       2 * time.Second,
+		DomainGlob: "*hemnet.se*",
+		Delay:      2 * time.Second,
 	})
 	
 	header := []string{"Name",
@@ -54,7 +54,7 @@ func scrape(store *Storage) {
 	stopScrapePrice := 10000000 // 13 Million
 	
 	for endPrice <= stopScrapePrice {
-		filename := "result" + strconv.Itoa(stopScrapePrice) + ".csv"
+		filename := "result" + strconv.Itoa(endPrice) + ".csv"
 		file, err := os.Create(filename)
 		
 		checkError("Cannot create file", err)
@@ -76,6 +76,7 @@ func scrape(store *Storage) {
 		file.Close()
 		writer.Flush()
 		store.UploadToS3(filename)
+		os.Remove(filename)
 	}
 	// Wait until threads are finished
 	collector.Wait()
