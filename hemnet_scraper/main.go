@@ -11,7 +11,7 @@ import (
 )
 
 func pagedUrl(minPrice int, maxPrice int, pageNumber int) string {
-	url := "https://www.hemnet.se/salda/bostader?location_ids=17744&item_types=bostadsratt"
+	url := "https://www.hemnet.se/salda/bostader?location_ids=17744&item_types%5B%5D=bostadsrat"
 	minPriceQuery := fmt.Sprintf("&selling_price_min=%d", minPrice)
 	maxPriceQuery := fmt.Sprintf("&selling_price_max=%d", maxPrice)
 	pageNumberQuery := fmt.Sprintf("&page=%d", pageNumber)
