@@ -68,6 +68,7 @@ type PredictResponse struct {
 
 func (p *Predictor) PredictPrice(props scraper.Properties) PredictResponse {
 	preparedPros := p.transformQuery(props)
+	log.Println(preparedPros)
 	postBody, _ := json.Marshal(map[string][][]float64{
 		"queries": {
 			preparedPros,

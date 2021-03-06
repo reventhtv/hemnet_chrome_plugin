@@ -32,7 +32,8 @@ func Scrape(url string) Properties {
 		label := element.ChildText(".property-attributes-table__label")
 		value := element.ChildText(".property-attributes-table__value")
 		if label == "Boarea" {
-			properties.Size = strings.Replace(value, " m²", "", 1)
+			value = strings.Replace(value, " m²", "", 1)
+			properties.Size = strings.Split(value, ",")[0]
 		}
 	})
 	
@@ -62,5 +63,6 @@ func Scrape(url string) Properties {
 	if err := scraper.Visit(url); err != nil {
 		log.Println(err)
 	}
+	log.Println(properties)
 	return properties
 }
