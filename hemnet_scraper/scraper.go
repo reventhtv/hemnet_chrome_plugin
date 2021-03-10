@@ -76,8 +76,14 @@ func deepVisit(internalScraper *colly.Collector, url string) SoldProperties {
 		element.ForEach(".sold-property__price-stats", func(_ int, internal *colly.HTMLElement) {
 			labels := internal.ChildTexts(".sold-property__attribute")
 			values := internal.ChildTexts(".sold-property__attribute-value")
-			if labels[1] == "Begärt pris" {
-				value := removeCurrencyAndWs(values[1])
+			
+			props := make(map[string]string)
+			for i := 0; i < len(labels); i++ {
+				props[labels[i]] = values[i]
+			}
+			v, found := props["Begärt pris"]
+			if found {
+				value := removeCurrencyAndWs(v)
 				priceIn, err := strconv.Atoi(value)
 				if err != nil {
 					// handle error

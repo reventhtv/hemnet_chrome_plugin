@@ -6,7 +6,6 @@ import (
 	"github.com/gocolly/colly/v2"
 	"log"
 	"os"
-	"strconv"
 	"time"
 )
 
@@ -30,7 +29,7 @@ func scrape(store *Storage) {
 	collector := colly.NewCollector(
 		colly.AllowedDomains("hemnet.se", "www.hemnet.se"),
 	)
-	// Limit the number of threads started by colly to two
+	// TODO: Limit the number of threads started by colly to two
 	// when visiting links which domains' matches "*httpbin.*" glob
 	_ = collector.Limit(&colly.LimitRule{
 		DomainGlob: "*hemnet.se*",
@@ -51,18 +50,17 @@ func scrape(store *Storage) {
 	
 	beginPrice := 0
 	endPrice := 1750000
-	stopScrapePrice := 10000000 // 13 Million
+	stopScrapePrice := 12000000 // 12 Million
 	
+	filename := "result-not-clean.csv"
+	file, err := os.Create(filename)
+	checkError("Cannot create file", err)
+	writer := csv.NewWriter(file)
+	if err := writer.Write(header); err != nil {
+		log.Println("Failed to write to CSV")
+		log.Println(err)
+	}
 	for endPrice <= stopScrapePrice {
-		filename := "result" + strconv.Itoa(endPrice) + ".csv"
-		file, err := os.Create(filename)
-		
-		checkError("Cannot create file", err)
-		writer := csv.NewWriter(file)
-		if err := writer.Write(header); err != nil {
-			log.Println("Failed to write to CSV")
-			log.Println(err)
-		}
 		for pageNumber := 1; pageNumber <= 50; pageNumber++ {
 			url := pagedUrl(beginPrice, endPrice, pageNumber)
 			log.Println("Visiting URL")
@@ -73,13 +71,13 @@ func scrape(store *Storage) {
 		}
 		beginPrice = endPrice
 		endPrice = beginPrice + 250000
-		file.Close()
-		writer.Flush()
-		store.UploadToS3(filename)
-		os.Remove(filename)
 	}
+	
 	// Wait until threads are finished
 	collector.Wait()
+	file.Close()
+	writer.Flush()
+	store.UploadToS3(filename)
 }
 
 func main() {
