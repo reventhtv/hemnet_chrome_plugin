@@ -8,6 +8,7 @@ import (
 
 type Properties struct {
 	Name        string
+	Type        string
 	Kommun      string
 	Rooms       string
 	Size        string
@@ -15,11 +16,20 @@ type Properties struct {
 	MonthlyRent string
 }
 
-func Scrape(url string) Properties {
+type Scraper struct {
+	colly *colly.Collector
+}
+
+func NewScraper(colly *colly.Collector) *Scraper {
+	return &Scraper{
+		colly,
+	}
+	
+}
+
+func (s *Scraper) Scrape(url string) Properties {
 	// Instantiate default collector
-	scraper := colly.NewCollector(
-		colly.AllowedDomains("hemnet.se", "www.hemnet.se"),
-	)
+	scraper := s.colly
 	var properties Properties
 	scraper.OnHTML("div[class=property-address]", func(e *colly.HTMLElement) {
 		properties.Name = e.ChildText(".qa-property-heading")
@@ -44,6 +54,8 @@ func Scrape(url string) Properties {
 				value := internal.ChildText(".property-attributes-table__value")
 				
 				switch label {
+				case "Bostadstyp":
+					properties.Type = value
 				case "Antal rum":
 					properties.Rooms = strings.Replace(value, " rum", "", 1)
 				case "Byggår":

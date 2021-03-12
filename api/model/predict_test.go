@@ -9,6 +9,7 @@ func TestNewPredictor(t *testing.T) {
 	SUT, err := NewPredictor("", "regions.json")
 	if err != nil {
 		t.Fail()
+		return
 	}
 	//{Kanelgränd 23 Farmarstigen 2  1986 4882}
 	// 278.0,35.0,2.0,4882
@@ -36,6 +37,7 @@ func TestPredictor_PredictPrice(t *testing.T) {
 	SUT, err := NewPredictor("http://localhost:5000/predict", "regions.json")
 	if err != nil {
 		t.Fail()
+		return
 	}
 	
 	testValue := scraper.Properties{
