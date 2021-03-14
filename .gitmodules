@@ -1,0 +1,3 @@
+[submodule "web/design"]
+	path = web/design
+	url = git@github.com:creativetimofficial/blk-design-system.git
