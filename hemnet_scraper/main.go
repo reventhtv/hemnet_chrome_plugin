@@ -33,7 +33,7 @@ func scrape(store *Storage) {
 	// when visiting links which domains' matches "*httpbin.*" glob
 	_ = collector.Limit(&colly.LimitRule{
 		DomainGlob: "*hemnet.se*",
-		Delay:      2 * time.Second,
+		Delay:      1 * time.Second,
 	})
 	
 	header := []string{"Name",

@@ -25,11 +25,21 @@ type HttpHandle struct {
 	stator    *model.Stator
 }
 
+func setupResponse(w *http.ResponseWriter, req *http.Request) {
+	(*w).Header().Set("Access-Control-Allow-Origin", "*")
+	(*w).Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
+	(*w).Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
+}
+
 func (h *HttpHandle) handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hi there")
 }
 
 func (h *HttpHandle) predict(w http.ResponseWriter, r *http.Request) {
+	setupResponse(&w, r)
+	if (*r).Method == "OPTIONS" {
+		return
+	}
 	var req Request
 	// Try to decode the request body into the struct. If there is an error,
 	// respond to the client with the error message and a 400 status code.
@@ -40,7 +50,10 @@ func (h *HttpHandle) predict(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	props := h.scraper.Scrape(req.Query)
-	// TODO: Out of index check
+	if props.Type != "Lägenhet" {
+		http.Error(w, "Only apartments are supported", http.StatusBadRequest)
+		return
+	}
 	
 	predictions := h.predictor.PredictPrice(props)
 	countyStats := h.stator.ProvideCounty(props)
@@ -102,6 +115,7 @@ func main() {
 	httpHandle := &HttpHandle{
 		scraper.NewScraper(colly.NewCollector(
 			colly.AllowedDomains("hemnet.se", "www.hemnet.se"),
+			colly.AllowURLRevisit(),
 		)),
 		predictor,
 		model.NewStator(records),
