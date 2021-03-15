@@ -60,7 +60,6 @@ print(rent_predicted['Rooms'])
 room_median = df['Rooms'].median()
 #print(room_median)
 df.Rooms.fillna(room_median, inplace=True)
-#print(df.isnull().sum())
 
 df_unclean_rooms_with_null = df_unclean[['SoldPrice','AskPrice', 'Rooms','Size','MonthlyRent','YearlyRent','YearBuilt']].dropna()
 df_unclean_rooms_without_null = df_unclean_rooms_with_null.dropna()
