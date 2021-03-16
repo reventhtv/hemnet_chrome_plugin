@@ -1,32 +1,14 @@
 import "../assets/css/blk-design-system.min.css";
 import "../assets/css/nucleo-icons.css"
+import {getChartData} from './logic/chartPopulate.js';
 import * as React from "react";
 import DistributionChart from "./DistributionChart";
 
 class Summary extends React.Component {
 
-    setChartData(vals) {
-        let graph = new Map()
-        vals.sort(function (a, b) {
-            return a - b;
-        });
-        graph.set(0, 0)
-        vals.forEach(function (v) {
-            if (graph.has(v)) {
-                graph.set(v, graph.get(v) + 1)
-            } else {
-                graph.set(v, 1)
-            }
-        });
-        let labels = Array.from(graph.keys())
-        let values = Array.from(graph.values())
-        return {chartLabels: labels, chartValues: values};
-    }
-
-
     constructor(props) {
         super(props);
-        let graph = this.setChartData(this.props.values.values)
+        let graph = getChartData(this.props.values.values, this.props.name, this.props.values.max)
         this.state = {
             name: this.props.name,
             min: this.props.values.min,
@@ -37,7 +19,6 @@ class Summary extends React.Component {
             chartLabels: graph.chartLabels,
             chartValues: graph.chartValues,
         };
-        this.setChartData(this.props.values.values)
     }
 
     render() {
