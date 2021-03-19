@@ -1,0 +1,51 @@
+Name,Region,Kommun,SoldPrice,AskPrice,Rooms,Size,MonthlyRent,YearlyRent,YearBuilt
+Bergsgatan 8,Bergvik,Södertälje,1585000,1495000,2.0,53,3606,5100.0,1944.0
+Skolgatan 6E BV,Centralt,Sigtuna,1295000,1295000,1.0,34,2256,3960.0,1955.0
+Oxens gata 265,Brandbergen,Haninge,1430000,1095000,2.0,46,3370,3165.0,1970.0
+Holländarevägen 15,Centralt,Nykvarns,1595000,1595000,2.0,56,3452,6500.0,1960.0
+Björkstigen 6,Åbylund,Haninge,1050000,1050000,1.0,40,3767,2400.0,1936.0
+Ribby allé 64,VästerhaningeRibbyÄngar,Haninge,1520000,1295000,1.0,39,3570,3355.0,2006.0
+Sörgården 101,Sörgården,Vallentuna,1750000,1795000,3.0,79,4945,6144.0,1969.0
+Rågvägen 7,Hallunda,Botkyrka,1725000,1500000,2.0,58,3732,5400.0,1972.0
+Fornhöjdsvägen 8,Fornhöjden,Södertälje,1370000,1195000,2.0,62,3560,3000.0,1972.0
+Karlslundsgatan 18,Bårsta,Södertälje,1720000,1295000,2.0,60,3529,8800.0,1964.0
+Sibeliusgången 44 7 tr,Akalla,Stockholms,1580000,1595000,2.0,45,2996,3966.0,1977.0
+Sotingeplan 40 lgh 1102,,Spånga,1740000,1700000,2.0,62,3849,5943.0,1969.0
+Kopparvägen 12,Järfälla,Järfälla,1550000,1445000,2.0,51,4018,4066.0,1963.0
+Ringvägen 106,Västerhaninge,Haninge,1200000,1145000,1.0,32,2549,2676.0,1961.0
+Backluravägen 159,NorraNynäshamn,Nynäshamns,1650000,1650000,4.0,104,5748,15550.0,1984.0
+Cedergrensvägen 16 ACCEPTERAT PRIS,Midsommarkransen,Stockholms,1300000,1350000,1.0,17,873,1197.0,1968.0
+Storängsvägen 11F,Åkersbergacentralt,Österåkers,1700000,1695000,1.0,39,2734,5600.0,1959.0
+Enbäcksvägen 14 A Hiss,Knutby,Norrtälje,1545000,1500000,3.0,83,5068,200.0,1991.0
+Bryggargatan 9,,Nynäshamns,1490000,1490000,2.0,42,2484,3419.0,1973.0
+Bryggargatan 9,,Nynäshamns,1190000,1190000,1.0,29,1715,1533.0,1964.0
+Timotejvägen 7 3tr,,Botkyrka,1580000,1550000,2.0,44,3287,3792.0,1965.0
+Centralgatan 36b,Nynäshamn,Nynäshamns,1275000,1295000,2.0,41,3566,1920.0,1960.0
+Aspnäsvägen 30 5 tr,Jakobsberg,Järfälla,1355000,1295000,1.0,42,2447,2400.0,1970.0
+Nynäsvägen 38,Kullsta,Nynäshamns,1340000,1195000,2.0,46,3131,3600.0,1986.0
+Storängsvägen 9 B,ÅkersbergaCentralt,Österåkers,1500000,1550000,1.0,39,2988,3505.0,1959.0
+Varvsvägen 13,HuddingeMasmo,Huddinge,1700000,1495000,2.0,35,2225,3000.0,2020.0
+Albyvägen 17 1tr.,,Alby,1720000,1595000,3.0,81,5987,4650.0,1990.0
+Stig Lindbergs gata 19A,,Värmdö,1700000,1700000,1.0,25,1854,6000.0,1939.0
+Vasavägen 53,Jakobsberg,Järfälla,1290000,1290000,1.0,25,1994,3000.0,1958.0
+Grindvägen 32 A,Grind,Norrtälje,1375000,1375000,2.0,55,2915,1800.0,1967.0
+Hackstavägen 12C 2tr,ÅkersbergaCentralt,Österåkers,1650000,1695000,2.0,53,3706,4818.0,1961.0
+Veckovägen 69,Jakobsberg,Järfälla,1750000,1700000,2.0,54,4060,5233.0,1962.0
+Kvarnplan 1,Jakobsberg,Järfälla,1520000,1495000,2.0,44,3788,4411.0,1968.0
+Lagmansbacken 6,,Alby,1700000,1695000,2.0,45,2813,4500.0,2018.0
+Astrakangatan 2 Vån 5,Hässelby,Stockholms,1750000,1595000,2.0,42,2649,2700.0,1956.0
+Blomsterkungsvägen 116a Vån 2,HässelbyNorraVillastad,Stockholms,1700000,1595000,2.0,38,2170,4863.0,2019.0
+Bruksgatan 6A,Centralt,Nykvarns,1550000,1495000,2.0,41,2351,4536.0,1947.0
+Karlslundsgatan 22,Bårstaberget,Södertälje,1750000,1595000,2.0,53,3468,5251.0,1962.0
+Lantmätarvägen 15,,Upplands,1695000,1695000,2.0,53,2093,2400.0,2008.0
+Vinlandsvägen 2F,Jursta,Upplands,1700000,1650000,2.0,53,2818,3600.0,2017.0
+Törnrosavägen 5,Karlhov,Södertälje,1650000,1595000,3.0,67,4073,6000.0,1958.0
+Bruksgatan 6,Brunnsäng,Södertälje,1495000,1495000,1.0,34,2009,2400.0,2012.0
+Höjdgatan 11,Centralt,Nynäshamns,1625000,1595000,3.0,67,4835,4198.0,1945.0
+Terapivägen 12D,Huddinge,Huddinge,1275000,1095000,2.0,48,4831,1476.0,1918.0
+Vikingavägen 15 1/2 tr,Handen,Haninge,1390000,1195000,1.0,38,2459,1800.0,1956.0
+Aspnäsvägen 34,Jakobsberg,Järfälla,1485000,1295000,1.0,48,2475,4263.0,1970.0
+Engelbrektsvägen 41B,Jakobsberg,Järfälla,1595000,1595000,1.0,33,1997,3627.0,2017.0
+Växthusvägen 19,,Upplands,1250000,1250000,1.0,26,1700,1543.0,2013.0
+Växthusvägen 9,Rosenängarna,Upplands,1350000,1350000,2.0,35,2220,3059.0,2017.0
+Sandstuguvägen 57,Uttran,Botkyrka,1549000,1550000,2.0,28,1667,3472.0,2016.0
