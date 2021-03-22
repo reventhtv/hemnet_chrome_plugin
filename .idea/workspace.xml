@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d04ce146-2cce-4031-b158-f157252a3808" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hemnet_scraper/result-clean-2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hemnet_scraper/reventh_clean.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hemnet_scraper/uncleanData2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hemnet_chrome_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hemnet_chrome_plugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/prototype.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hemnet_scraper/uncleanData.py" beforeDir="false" afterPath="$PROJECT_DIR$/hemnet_scraper/uncleanData.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Go File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -37,19 +40,23 @@
   </component>
   <component name="JupyterTrust" id="8cd9e042-592d-4d89-b6fe-fc10934b81aa" />
   <component name="ProjectId" id="1frMA2uVHyX7CXQPr134yqiuFW3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/src/insight-features" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sweden-electricity-consumption" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -59,19 +66,7 @@
       <recent name="$PROJECT_DIR$/api" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.uncleanData2">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hemnet_chrome_plugin" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -115,14 +110,80 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="uncleanData" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hemnet_chrome_plugin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hemnet_scraper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hemnet_scraper/uncleanData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="uncleanData2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hemnet_chrome_plugin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hemnet_scraper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hemnet_scraper/uncleanData2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="visualization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hemnet_chrome_plugin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../hemnet-scraper" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../hemnet-scraper/visualization.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.uncleanData2" />
+        <item itemvalue="Python.visualization" />
+        <item itemvalue="Python.uncleanData" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -145,6 +206,7 @@
     <option name="version" value="2" />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,38 +214,14 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1878" height="304" key="GridCell.Tab.0.bottom" timestamp="1597649393608">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.bottom/0.0.1680.1050/-522.-1440.2560.1440@0.0.1680.1050" timestamp="1597649393608" />
-    <state width="1878" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1597481043483" />
-    <state width="1878" height="304" key="GridCell.Tab.0.center" timestamp="1597649393606">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.center/0.0.1680.1050/-522.-1440.2560.1440@0.0.1680.1050" timestamp="1597649393606" />
-    <state width="1878" height="304" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1597481043482" />
-    <state width="1878" height="304" key="GridCell.Tab.0.left" timestamp="1597649393605">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.left/0.0.1680.1050/-522.-1440.2560.1440@0.0.1680.1050" timestamp="1597649393605" />
-    <state width="1878" height="304" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1597481043482" />
-    <state width="1878" height="304" key="GridCell.Tab.0.right" timestamp="1597649393607">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.right/0.0.1680.1050/-522.-1440.2560.1440@0.0.1680.1050" timestamp="1597649393607" />
-    <state width="1878" height="304" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1597481043483" />
-    <state x="469" y="179" key="SettingsEditor" timestamp="1597480758181">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1597480758181" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

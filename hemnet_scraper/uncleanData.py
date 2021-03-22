@@ -9,20 +9,21 @@ print(df_unclean.head(10))
 
 
 sum_unclean = df_unclean.isnull().sum()
-print(sum_unclean)
+#print(sum_unclean)
 
 df_yearlyrent_sum = df_unclean['YearlyRent'].count()
-print(df_yearlyrent_sum)
+#print(df_yearlyrent_sum)
 
 data_with_null = df_unclean[['SoldPrice','AskPrice','Rooms','Size','MonthlyRent','YearlyRent']].dropna()
 
 rent_predicted = pd.DataFrame(columns=['YearlyRent', 'Rooms'])
 
 data_without_null = data_with_null.dropna()
+#print(data_without_null.dtypes)
 train_data_x = data_without_null.iloc[:,:5]
-print(train_data_x)
+#print(train_data_x)
 train_data_y = data_without_null.iloc[:,5]
-print(train_data_y)
+#print(train_data_y)
 
 #Training data
 linreg.fit(train_data_x,train_data_y)
@@ -31,7 +32,7 @@ data_with_null = df_unclean[['SoldPrice','AskPrice','Rooms','Size','MonthlyRent'
 test_data = data_with_null.iloc[:,:5]
 #print(test_data)
 rent_predicted['YearlyRent'] = pd.Series(linreg.predict(test_data))
-
+#print(rent_predicted['YearlyRent'])
 rent_predicted.YearlyRent = np.round(rent_predicted.YearlyRent)
 df.YearlyRent.fillna(rent_predicted.YearlyRent,inplace=True)
 #print(df.head(10))
@@ -58,7 +59,7 @@ print(rent_predicted['Rooms'])
 #The max and min range for number of rooms is very less compared to other features.
 #So, it could be better to use either mean/median to impute empty fields.
 room_median = df['Rooms'].median()
-#print(room_median)
+print(room_median)
 df.Rooms.fillna(room_median, inplace=True)
 
 df_unclean_rooms_with_null = df_unclean[['SoldPrice','AskPrice', 'Rooms','Size','MonthlyRent','YearlyRent','YearBuilt']].dropna()
